@@ -17,7 +17,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">音乐</string>
+  <string name="app_name">我的音乐</string>
   <!-- Page titles -->
   <string name="page_recent">最近播放</string>
   <string name="page_artists">艺术家</string>
