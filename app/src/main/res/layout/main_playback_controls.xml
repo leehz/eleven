@@ -20,14 +20,14 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="@android:color/transparent" >
-    <com.cyanogenmod.eleven.widgets.PlayPauseProgressButton
+    <top.itmp.eleven.widgets.PlayPauseProgressButton
         android:id="@+id/playPauseProgressButton"
         android:layout_width="@dimen/audio_player_controls_main_button_width"
         android:layout_height="@dimen/audio_player_controls_main_button_height"
         android:layout_centerInParent="true" >
 
         <!-- TODO: Figure out why scaleType: centerInside isn't properly scaling up -->
-        <com.cyanogenmod.eleven.widgets.PlayPauseButton
+        <top.itmp.eleven.widgets.PlayPauseButton
             android:id="@+id/action_button_play"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -57,7 +57,7 @@
             android:indeterminate="false"
             android:max="1000"
             android:progressDrawable="@drawable/now_playing_progress" />
-    </com.cyanogenmod.eleven.widgets.PlayPauseProgressButton>
+    </top.itmp.eleven.widgets.PlayPauseProgressButton>
 
     <!-- TODO: Figure out why scaleType: centerInside isn't properly scaling up -->
     <!-- ANSWER: two issues (a) centerInside doesn't scale up, only down, use
@@ -83,7 +83,7 @@
             android:textSize="@dimen/audio_player_time_text_size"
             android:textStyle="bold"/>
 
-        <com.cyanogenmod.eleven.widgets.RepeatingImageButton
+        <top.itmp.eleven.widgets.RepeatingImageButton
             android:id="@+id/action_button_previous"
             android:layout_width="@dimen/audio_player_controls_end_button_width"
             android:layout_height="@dimen/audio_player_controls_end_button_height"
@@ -112,7 +112,7 @@
             android:layout_below="@id/audio_player_current_time"
             android:background="@color/now_playing_divider" />
 
-        <com.cyanogenmod.eleven.widgets.BrowseButton
+        <top.itmp.eleven.widgets.BrowseButton
             android:id="@+id/action_button_browse"
             android:layout_width="@dimen/audio_player_controls_end_button_width"
             android:layout_height="@dimen/audio_player_controls_end_button_height"
@@ -124,7 +124,7 @@
             android:scaleType="fitCenter"
             android:src="@drawable/btn_playback_browse" />
 
-        <com.cyanogenmod.eleven.widgets.ShuffleButton
+        <top.itmp.eleven.widgets.ShuffleButton
             android:id="@+id/action_button_shuffle"
             android:layout_width="@dimen/audio_player_controls_end_button_width"
             android:layout_height="@dimen/audio_player_controls_end_button_height"
@@ -155,7 +155,7 @@
             android:textSize="@dimen/audio_player_time_text_size"
             android:textStyle="bold"/>
 
-        <com.cyanogenmod.eleven.widgets.RepeatingImageButton
+        <top.itmp.eleven.widgets.RepeatingImageButton
             android:id="@+id/action_button_next"
             android:layout_width="@dimen/audio_player_controls_end_button_width"
             android:layout_height="@dimen/audio_player_controls_end_button_height"
@@ -184,7 +184,7 @@
             android:layout_below="@id/audio_player_total_time"
             android:background="@color/now_playing_divider" />
 
-        <com.cyanogenmod.eleven.widgets.QueueButton
+        <top.itmp.eleven.widgets.QueueButton
             android:id="@+id/action_button_queue"
             android:layout_width="@dimen/audio_player_controls_end_button_width"
             android:layout_height="@dimen/audio_player_controls_end_button_height"
@@ -196,7 +196,7 @@
             android:scaleType="fitCenter"
             android:src="@drawable/btn_queue_icon" />
 
-        <com.cyanogenmod.eleven.widgets.RepeatButton
+        <top.itmp.eleven.widgets.RepeatButton
             android:id="@+id/action_button_repeat"
             android:layout_width="@dimen/audio_player_controls_end_button_width"
             android:layout_height="@dimen/audio_player_controls_end_button_height"

@@ -15,7 +15,7 @@
      limitations under the License.
  -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.cyanogenmod.eleven"
+    package="top.itmp.eleven"
     android:versionCode="2"
     android:versionName="2.0" >
 
@@ -52,14 +52,14 @@
     <uses-feature android:name="android.hardware.sensor.accelerometer" />
 
     <application
-        android:name="com.cyanogenmod.eleven.ElevenApplication"
+        android:name="top.itmp.eleven.ElevenApplication"
         android:allowBackup="true"
         android:allowTaskReparenting="true"
         android:hardwareAccelerated="@bool/config_hardwareAccelerated"
         android:icon="@mipmap/ic_launcher_eleven"
         android:label="@string/app_name"
         android:largeHeap="@bool/config_largeHeap"
-        android:taskAffinity="com.cyanogenmod.eleven.task"
+        android:taskAffinity="top.itmp.eleven.task"
         android:theme="@style/Eleven.Theme">
 
         <!-- Searchable -->
@@ -68,7 +68,7 @@
             android:value=".ui.activities.SearchActivity" />
         <!-- Main activity -->
         <activity
-            android:name="com.cyanogenmod.eleven.ui.activities.HomeActivity"
+            android:name="top.itmp.eleven.ui.activities.HomeActivity"
             android:windowSoftInputMode="adjustPan"
             android:launchMode="singleTop"
             android:exported="true"
@@ -91,7 +91,7 @@
                 <data android:mimeType="vnd.android.cursor.dir/artists" />
             </intent-filter>
             <intent-filter>
-                <action android:name="com.cyanogenmod.eleven.AUDIO_PLAYER" />
+                <action android:name="top.itmp.eleven.AUDIO_PLAYER" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -99,7 +99,7 @@
 
         <!-- Search interface -->
         <activity
-            android:name="com.cyanogenmod.eleven.ui.activities.SearchActivity"
+            android:name="top.itmp.eleven.ui.activities.SearchActivity"
             android:windowSoftInputMode="adjustResize"
             android:exported="true"
             android:theme="@style/Eleven.Theme">
@@ -116,11 +116,11 @@
         </activity>
         <!-- Used to set options -->
         <activity
-            android:name="com.cyanogenmod.eleven.ui.activities.SettingsActivity"
+            android:name="top.itmp.eleven.ui.activities.SettingsActivity"
             android:label="@string/menu_settings"/>
         <!-- Audio Preview -->
         <activity
-            android:name=".ui.activities.preview.AudioPreviewActivity"
+            android:name="top.itmp.eleven.ui.activities.preview.AudioPreviewActivity"
             android:launchMode="singleTask"
             android:excludeFromRecents="true"
             android:taskAffinity=""
@@ -162,7 +162,7 @@
         </activity>
         <!-- 4x1 App Widget -->
         <receiver
-            android:name="com.cyanogenmod.eleven.appwidgets.AppWidgetSmall"
+            android:name="top.itmp.eleven.appwidgets.AppWidgetSmall"
             android:exported="false"
             android:label="@string/app_widget_small" >
             <intent-filter>
@@ -175,7 +175,7 @@
         </receiver>
         <!-- 4x2  App Widget -->
         <receiver
-            android:name="com.cyanogenmod.eleven.appwidgets.AppWidgetLarge"
+            android:name="top.itmp.eleven.appwidgets.AppWidgetLarge"
             android:exported="false"
             android:label="@string/app_widget_large" >
             <intent-filter>
@@ -188,7 +188,7 @@
         </receiver>
         <!-- 4x2 alternate App Widget -->
         <receiver
-            android:name="com.cyanogenmod.eleven.appwidgets.AppWidgetLargeAlternate"
+            android:name="top.itmp.eleven.appwidgets.AppWidgetLargeAlternate"
             android:exported="false"
             android:label="@string/app_widget_large_alt" >
             <intent-filter>
@@ -200,21 +200,21 @@
                 android:resource="@xml/app_widget_large_alternate" />
         </receiver>
         <!-- Media button receiver -->
-        <receiver android:name="com.cyanogenmod.eleven.MediaButtonIntentReceiver" >
+        <receiver android:name="top.itmp.eleven.MediaButtonIntentReceiver" >
             <intent-filter>
                 <action android:name="android.intent.action.MEDIA_BUTTON" />
                 <action android:name="android.media.AUDIO_BECOMING_NOISY" />
             </intent-filter>
         </receiver>
         <!-- Used to recalculate sorting of songs based on the user's locale -->
-        <receiver android:name=".locale.LocaleChangeReceiver">
+        <receiver android:name="top.itmp.eleven.locale.LocaleChangeReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.LOCALE_CHANGED"/>
             </intent-filter>
         </receiver>
         <!-- Music service -->
         <service
-            android:name="com.cyanogenmod.eleven.MusicPlaybackService"
+            android:name="top.itmp.eleven.MusicPlaybackService"
             android:label="@string/app_name"
             android:process=":main" />
     </application>

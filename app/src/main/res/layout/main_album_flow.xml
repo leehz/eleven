@@ -15,11 +15,11 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 -->
-<com.cyanogenmod.eleven.widgets.SquareFrame
+<top.itmp.eleven.widgets.SquareFrame
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <com.cyanogenmod.eleven.widgets.SquareViewPager
+    <top.itmp.eleven.widgets.SquareViewPager
         android:id="@+id/audio_player_album_art_viewpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
@@ -32,7 +32,7 @@
         android:background="@drawable/equalizer_background"
         android:layout_gravity="bottom"/>
 
-    <com.cyanogenmod.eleven.widgets.VisualizerView
+    <top.itmp.eleven.widgets.VisualizerView
         android:id="@+id/visualizerView"
         android:gravity="bottom"
         android:layout_gravity="bottom"
@@ -55,4 +55,4 @@
         android:textColor="@color/white"
         android:textSize="@dimen/text_size_small"
         android:alpha="0.0"/>
-</com.cyanogenmod.eleven.widgets.SquareFrame>
+</top.itmp.eleven.widgets.SquareFrame>
