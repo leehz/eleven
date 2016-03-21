@@ -13,8 +13,6 @@
 
 package top.itmp.eleven;
 
-import top.itmp.eleven.R;
-
 /**
  * App-wide constants.
  * 
